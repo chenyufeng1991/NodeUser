@@ -17,6 +17,11 @@ app.get('/getPassword', function (req, res) {
     res.end();
 });
 
+app.get('/getUser', function (req, res) {
+    res.send("用户");
+    res.end();
+});
+
 app.get('/register', function (req, res) {
     var username = req.query.username;
     var password = req.query.password;

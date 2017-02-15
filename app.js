@@ -12,6 +12,11 @@ app.get('/getName', function (req, res) {
     res.end();
 });
 
+app.get('/getPassword', function (req, res) {
+    res.send("密码");
+    res.end();
+});
+
 app.get('/register', function (req, res) {
     var username = req.query.username;
     var password = req.query.password;

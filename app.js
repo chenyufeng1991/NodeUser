@@ -7,7 +7,7 @@ var app = express();
 // var mongoose = require('mongoose');
 // var User = mongoose.model('User');
 
-app.get('/', function (req, res) {
+app.get('/getName', function (req, res) {
     res.send("云服务器");
     res.end();
 });
